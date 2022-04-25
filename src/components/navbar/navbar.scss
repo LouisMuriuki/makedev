@@ -1,0 +1,88 @@
+.navbar {
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    display: flex;
+    height: 80px;
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .navbar-logo {
+            display: flex;
+            margin-left: 20px;
+            cursor: pointer;
+            font-size: 2rem;
+
+            .nav-links {
+                text-decoration: none;
+                color: #000;
+
+                .nav-link {
+                    align-items: center;
+                }
+            }
+        }
+
+        .links {
+            display: flex;
+            margin-left: 40%;
+            position:relative;
+
+            .account {
+                display: flex;
+                position:absolute;
+                align-items: center;
+                flex-direction: column;
+                width: max-content;
+                background-color: #fff;
+                gap: 10px;
+                border: 1px solid #000;
+                border-radius:5px;
+                top: 40px;
+                right:15px;
+                z-index:999;
+                padding:10px;
+
+                ul {
+                    cursor:pointer;
+                    &:hover{
+                        background-color: rgb(76, 84, 188);
+                        color:#fff;
+                    }
+                    li {
+                        font-size: 16px;
+                        height:20px;
+                        
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                li {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    text-decoration: none;
+                    font-size: 20px;
+
+                    .nav-links {
+                        text-decoration: none;
+                        padding: 0.5rem 1rem;
+                        color:#000
+                    }
+
+                    .nav-links:hover {
+                        border-bottom: 4px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

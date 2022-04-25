@@ -1,0 +1,116 @@
+{
+    "Courses": [
+        {
+            "web": [
+                {
+                    "title": "HTML and CSS",
+                    "Img": "",
+                    "instructor": "Manny Mulano",
+                    "difficulty": "basic",
+                    "lessons": "20",
+                    "id": "1",
+                    "type": "instructor led",
+                    "community":"Web"
+                },
+                {
+                    "title": "JAVASCRIPT",
+                    "Img": "",
+                    "instructor": "Manny Mulano",
+                    "difficulty": "basic",
+                    "lessons": "25",
+                    "id": "2",
+                    "type": "instructor led",
+                    "community":"Web"
+                },
+                {
+                    "title": "REACT JS",
+                    "Img": "",
+                    "instructor": "Joan Chebet",
+                    "difficulty": "intermmediate",
+                    "lessons": "27",
+                    "id": "3",
+                    "type": "instructor led",
+                    "community":"Web"
+                },
+                {
+                    "title": "NODE JS",
+                    "Img": "",
+                    "instructor": "Louis Belair",
+                    "difficulty": "intermmediate",
+                    "lessons": "29",
+                    "id": "4",
+                    "type": "instructor led",
+                    "community":"Web"
+                },
+                {
+                    "title": "PHP",
+                    "Img": "",
+                    "instructor": "Joan Chebet",
+                    "difficulty": "intermmediate",
+                    "lessons": "20",
+                    "id": "5",
+                    "type": "instructor led",
+                    "community":"Web"
+                },
+                {
+                    "title": "SQL",
+                    "Img": "",
+                    "instructor": "Manny Mulano",
+                    "difficulty": "intermmediate",
+                    "lessons": "20",
+                    "id": "6",
+                    "type": "instructor led",
+                    "community":"Web"
+                }
+            ]
+        },
+        {
+            "mobileDevelopment": [
+                {
+                    "title": "JAVA",
+                    "Img": "",
+                    "instructor": "Michael Richards",
+                    "difficulty": "intermmediate",
+                    "lessons": "40",
+                    "id": "7",
+                    "type": "instructor led",
+                    "community":"Mobile"
+                },
+                {
+                    "title": "Kotlin",
+                    "Img": "",
+                    "instructor": "Michael Richards",
+                    "difficulty": "intermmediate",
+                    "lessons": "20",
+                    "id": "8",
+                    "type": "instructor led",
+                    "community":"Mobile"
+                }
+            ]
+        },
+        {
+            "dataScience": [
+                {
+                    "title": "Python",
+                    "Img": "",
+                    "instructor": "Michael Richards",
+                    "difficulty": "intermmediate",
+                    "lessons": "20",
+                    "id": "9",
+                    "type": "instructor led",
+                    "community":"data-science"
+                },
+                {
+                    "title": "R programming language",
+                    "Img": "",
+                    "instructor": "Michael Richards",
+                    "difficulty": "intermmediate",
+                    "lessons": "20",
+                    "id": "10",
+                    "type": "instructor led",
+                    "community":"data-science"
+                }
+            ]
+        }
+    ]
+}

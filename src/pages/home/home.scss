@@ -1,0 +1,49 @@
+.home {
+    margin: 10px;
+
+    .communities {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-weight: 600;
+            font-size: 3em;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+            p {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            ul {
+
+            li {
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: flex-start;
+                flex-direction: column;
+                font-size: 18px;
+
+            }
+
+        }
+    }
+    .trending{
+        margin: 10px;
+        
+        h3{
+font-size: 25px;
+        }
+        .courses{
+            display: flex;
+            justify-content: space-w;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            
+
+        }
+    }
+}

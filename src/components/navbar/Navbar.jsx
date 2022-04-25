@@ -1,0 +1,114 @@
+import React,{useState} from 'react'
+import { NavLink } from 'react-router-dom'
+import './navbar.scss'
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+function Navbar() {
+
+  const[drop, setDrop]=useState(false)
+
+  const toggledrop=()=>{
+    setDrop(!drop)
+
+  }
+
+  return (
+    <div className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <NavLink to="/" className="nav-links">
+            <h5 className="nav-link">MakeDev</h5>
+          </NavLink>
+        </div>
+        <div className='links'>
+          <ul>
+            <li>
+              <NavLink to="/courses" className="nav-links">
+                Courses
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/community" className="nav-links">
+                Community
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/projects" className="nav-links">
+                Projects
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/projects" className="nav-links">
+                Space
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/projects" className="nav-links">
+              Articles
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/projects" className="nav-links">
+                <NotificationsNoneOutlinedIcon className='notification' />
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <NavLink to="/projects" className="nav-links">
+                <ChatBubbleOutlineOutlinedIcon className='message' />
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <AccountBoxOutlinedIcon className="nav-links" onClick={toggledrop}/>
+            </li>
+          </ul>
+          {drop && (
+            <div className='account'>
+            <ul>
+              <li>
+                Your profile
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Enrolled Courses
+              </li>
+            </ul >
+            <ul>
+              <li>
+                Your Projects
+              </li>
+              <hr />
+            </ul >
+            <ul>
+              <li>
+                Sign out
+              </li>
+            </ul>
+          </div>
+          )
+          }
+          
+
+        </div >
+      </div >
+
+    </div >
+  )
+}
+
+export default Navbar

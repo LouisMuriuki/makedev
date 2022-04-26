@@ -8,13 +8,13 @@ import { community } from '../../Community'
 
 function Home() {
   const [courses, setCourses] = useState()
-  const [communities, setCommunities] = useState(community)
+  const [communities, setCommunities] = useState()
 
   useEffect(() => {
-    fetch('http://localhost:8000/Courses').then(res => {
+    fetch('http://localhost:8000/Community').then(res => {
       return res.json()
     }).then(data => {
-
+console.log(data)
       setCourses(data)
 
 
@@ -40,7 +40,7 @@ function Home() {
       <div className='cards'>
       <h3>Join a community:</h3>
         <div className='communitycard'>
-          {community && <Communitycard Communities={community} />}
+          {community && <Communitycard Communities={courses} />}
         </div>
         <h3>Trending Courses</h3>
         <div className="trending">

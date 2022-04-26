@@ -3,10 +3,10 @@ import Coursecard from '../../components/cards/Coursecard'
 import Navbar from '../../components/navbar/Navbar'
 import "./courses.scss"
 
-function Courses({courses}) {
+function Courses() {
   const [all ,setAll]=useState(null)
   useEffect(() => {
-    fetch('http://localhost:8000/Courses').then(res => {
+    fetch('http://localhost:8000/Community').then(res => {
       return res.json()
     }).then(data => {
       setAll(data)

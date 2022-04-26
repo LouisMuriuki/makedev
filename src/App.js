@@ -4,6 +4,7 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup"
 import Home from './pages/home/Home';
 import Community from './pages/community/Community';
+import Projects from './pages/projects/Projects'
 import Courses from './pages/courses/Courses'
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
@@ -31,6 +32,11 @@ function App() {
                </Route>
               <Route path="community">
                 <Route index element={<RequireAuth><Community/></RequireAuth>} />
+                {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
+                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
+              </Route> 
+              <Route path="projects">
+                <Route index element={<RequireAuth><Projects/></RequireAuth>} />
                 {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
                 <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
               </Route> 

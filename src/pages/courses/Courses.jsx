@@ -9,7 +9,6 @@ function Courses({courses}) {
     fetch('http://localhost:8000/Courses').then(res => {
       return res.json()
     }).then(data => {
-      console.log(data)
       setAll(data)
       // setCommunities(data[0].web.community) 
       // setCommunities(...communities, data[1].mobileDevelopment)

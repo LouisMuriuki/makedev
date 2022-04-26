@@ -2,12 +2,17 @@ import React from 'react'
 import CommunityCard from '../../components/cards/Communitycard'
 import Navbar from '../../components/navbar/Navbar'
 import './community.scss'
+import { community } from '../../Community'
+import Hero from '../../components/hero/Hero'
+
 
 function Community() {
   return (
     <div className='community'>
-        <Navbar/>
-        <div className="communities">
+      <Navbar />
+      <Hero />
+      <h3>Your Communities:</h3>
+      <div className="details">
         <h3>Communities</h3>
         <p>Join a community today and get access to free resources including but not limited to the below mentioned.</p>
         <ul>
@@ -19,7 +24,14 @@ function Community() {
         </ul>
         <p>What are you waiting for join a community today</p>
       </div>
-      <CommunityCard/>
+      <div className='cards'>
+        
+
+        <h3>Join a community:</h3>
+        <div className='communitycard'>
+          {community && <CommunityCard Communities={community} />}
+        </div>
+      </div>
     </div>
   )
 }

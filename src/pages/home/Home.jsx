@@ -4,22 +4,20 @@ import Trendingcard from '../../components/cards/Trendingcard'
 import Hero from '../../components/hero/Hero'
 import Navbar from '../../components/navbar/Navbar'
 import "./home.scss"
+import { community } from '../../Community'
 
 function Home() {
   const [courses, setCourses] = useState()
-  const [communities,setCommunities]=useState()
+  const [communities, setCommunities] = useState(community)
 
   useEffect(() => {
     fetch('http://localhost:8000/Courses').then(res => {
       return res.json()
     }).then(data => {
-      console.log(data)
+
       setCourses(data)
-      // setCommunities(data[0].web.community) 
-      // setCommunities(...communities, data[1].mobileDevelopment)
-      // setCommunities(...communities, data[2].dataScience)
-      
-      
+
+
     })
 
   }, [])
@@ -27,7 +25,7 @@ function Home() {
     <div className='home'>
       <Navbar />
       <Hero />
-      <div className="communities">
+      <div className="details">
         <h3>Communities</h3>
         <p>Join a community today and get access to free resources including but not limited to the below mentioned.</p>
         <ul>
@@ -39,10 +37,13 @@ function Home() {
         </ul>
         <p>What are you waiting for join a community today</p>
       </div>
-      {communities && <Communitycard Communities={communities} />}
-      <div className="trending">
+      <div className='cards'>
+      <h3>Join a community:</h3>
+        <div className='communitycard'>
+          {community && <Communitycard Communities={community} />}
+        </div>
         <h3>Trending Courses</h3>
-        <div className="courses">
+        <div className="trending">
           {courses && <Trendingcard Courses={courses} />}
         </div>
       </div>

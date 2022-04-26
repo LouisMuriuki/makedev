@@ -1,21 +1,21 @@
 import React from 'react'
-import "./trendingcard.css"
+import "./card.scss"
 
 function Coursecard({ Courses }) {
 
     return (
-        <div className='level1'>
+        <>
             {Courses.map(course => (
 
-                <div className='level2' key={course.id}>
+                <>
                     {course.trending ? (
-                        < div className="card" >
+                        < div className="card">
                             <div className="top">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0KizZsbacUiCja9vMoHcTex3XwsVth9Ifw&usqp=CAU" alt="" className="image" />
                             </div>
 
                             <div className="bottom">
-                                <div className="same">
+                                <div className="add">
                                     <p><b>Course:</b>{course.title}</p>
                                     <span><b>Difficulty:</b> {course.difficulty}</span>
                                 </div>
@@ -25,10 +25,10 @@ function Coursecard({ Courses }) {
                         : null}
 
 
-                </div>)
+                </>)
 
             )}
-        </div>
+        </>
 
     )
 }

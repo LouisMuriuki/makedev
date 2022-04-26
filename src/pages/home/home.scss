@@ -1,50 +1,56 @@
 .home {
 
-    .communities {
-        display: flex;
-        flex-direction: column;
-
+    .details {
+        margin: 20px 20px 20px 20px;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.99);
         h3 {
+            margin: 10px 0 20px 30px;
             font-weight: 600;
-            font-size: 3em;
-            margin-bottom: 10px;
-            margin-top: 10px;
+            font-size: 2rem;
             display: flex;
-            justify-content: center;
         }
 
         p {
-            font-size: 25px;
-            margin-bottom: 10px;
+            font-size: 23px;
+            margin: 10px 0 20px 30px;
         }
 
         ul {
+            
+            list-style: lower-roman;
 
             li {
                 display: flex;
-                margin-bottom: 10px;
-                justify-content: flex-start;
+                margin: 10px 0 10px 30px;
                 flex-direction: column;
                 font-size: 18px;
-
+                list-style: lower-roman;
             }
 
         }
     }
 
-    .trending {
+    .cards {
         display: flex;
         flex-direction: column;
-        width: 100%;
 
-        h3 {
-            font-size: 25px;
+        .communitycard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        h3{
+            margin: 10px;
         }
 
-        .courses {
+        .trending {
             display: flex;
-            width: 100%;
-            float: left;
+            flex-wrap: wrap;
+            .courses {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
         }
     }
 }

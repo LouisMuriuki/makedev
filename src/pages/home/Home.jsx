@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Communitycard from '../../components/cards/Communitycard'
-import Coursecard from '../../components/cards/Coursecard'
+import Trendingcard from '../../components/cards/Trendingcard'
 import Hero from '../../components/hero/Hero'
 import Navbar from '../../components/navbar/Navbar'
 import "./home.scss"
@@ -10,15 +10,15 @@ function Home() {
   const [communities,setCommunities]=useState()
 
   useEffect(() => {
-    fetch('http://localhost:8000/courses').then(res => {
+    fetch('http://localhost:8000/Courses').then(res => {
       return res.json()
     }).then(data => {
       console.log(data)
-      setCourses(data[0].web)
-      setCommunities(data[0].web.community) 
+      setCourses(data)
+      // setCommunities(data[0].web.community) 
       // setCommunities(...communities, data[1].mobileDevelopment)
       // setCommunities(...communities, data[2].dataScience)
-      console.log(communities)
+      
       
     })
 
@@ -43,7 +43,7 @@ function Home() {
       <div className="trending">
         <h3>Trending Courses</h3>
         <div className="courses">
-          {courses && <Coursecard Courses={courses} />}
+          {courses && <Trendingcard Courses={courses} />}
         </div>
       </div>
     </div>

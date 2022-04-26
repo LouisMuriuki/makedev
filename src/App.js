@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup"
 import Home from './pages/home/Home';
+import Community from './pages/community/Community';
+import Courses from './pages/courses/Courses'
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 
@@ -23,16 +25,15 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup/>} />
             <Route index element={<RequireAuth><Home /></RequireAuth>} />
-            {/* <Route path="courses">
-                <Route index element={<RequireAuth><List /></RequireAuth>} />
-                <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
-                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} />
-              </Route>
+             <Route path="courses">
+                <Route index element={<RequireAuth><Courses/></RequireAuth>} />
+               {/* <Route path=":Id" element={<RequireAuth><Single /></RequireAuth>} /> */}
+               </Route>
               <Route path="community">
-                <Route index element={<RequireAuth><List /></RequireAuth>} />
-                <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
-                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} />
-              </Route> */}
+                <Route index element={<RequireAuth><Community/></RequireAuth>} />
+                {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
+                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
+              </Route> 
           </Route>
         </Routes>
       </Router>

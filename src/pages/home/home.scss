@@ -1,5 +1,4 @@
 .home {
-    margin: 10px;
 
     .communities {
         display: flex;
@@ -13,11 +12,13 @@
             display: flex;
             justify-content: center;
         }
-            p {
-                font-size: 25px;
-                margin-bottom: 10px;
-            }
-            ul {
+
+        p {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul {
 
             li {
                 display: flex;
@@ -30,20 +31,20 @@
 
         }
     }
-    .trending{
-        margin: 10px;
-        
-        h3{
-font-size: 25px;
-        }
-        .courses{
-            display: flex;
-            justify-content: space-w;
-            align-items: center;
-            flex-wrap: wrap;
-            
-            
 
+    .trending {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .courses {
+            display: flex;
+            width: 100%;
+            float: left;
         }
     }
 }

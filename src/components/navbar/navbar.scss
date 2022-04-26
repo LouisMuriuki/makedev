@@ -29,6 +29,7 @@
             display: flex;
             margin-left: 40%;
             position:relative;
+            align-items: center;
 
             .account {
                 display: flex;
@@ -70,7 +71,7 @@
                     justify-content: space-evenly;
                     list-style: none;
                     text-decoration: none;
-                    font-size: 20px;
+                    font-size: 21px;
 
                     .nav-links {
                         text-decoration: none;
@@ -78,8 +79,10 @@
                         color:#000
                     }
 
-                    .nav-links:hover {
-                        border-bottom: 4px solid #fff;
+                    .nav-links:hover,
+                    .nav-links:active,
+                    .nav-links:focus{
+                        color: rgba(61, 61, 188, 0.903);
                     }
                 }
             }

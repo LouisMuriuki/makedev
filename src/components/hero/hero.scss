@@ -10,21 +10,38 @@
 
     }
     .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         position:absolute;
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-        top: 55%;
-        left: 17%;
-        background-color: white;
+        top: 6%;
+        left: 30%;
+        background-color: transparent;
         border-radius:5px;
         padding:10px;
+        
         h4{
-            font-size: 30px;
+            font-size: 50px;
             margin-bottom: 20px;
-            color: #000080;
+            color: #ffffff;
         }
         p{
             font: size 20px;
             margin-bottom: 20px;
+            color: #ffffff;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width:5rem;
+            background-color: rgba(61, 61, 188, 0.903);
+            color: rgb(254, 254, 254);
+            padding: 5px;
+            border:none;
+            cursor:pointer;
         }
     }
 }

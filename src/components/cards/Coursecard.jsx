@@ -13,11 +13,15 @@ function Coursecard({ Courses }) {
                     </div>
 
                     <div className="bottom">
-                        <div className="same">
-                            <p>Course: {course.title}</p>
-                            <span>Difficulty: {course.difficulty}</span>
+                        <div className="info">
+                            <p><b>Course:</b>{course.title}</p>
+                            <span><b>Difficulty:</b> {course.difficulty}</span>
                         </div>
-                        <p>Instructor: {course.instructor}</p>
+                        <div className="add">
+                        <p><b>Instructor: </b>{course.instructor}</p>
+                        <button>Enroll now</button>
+                        </div>
+                        
                     </div>
                 </div>)
 

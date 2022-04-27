@@ -1,4 +1,17 @@
 .community{
+    h3{
+        margin: 20px;
+    }
+    .enrolled{
+        .navlink{
+            display: flex;
+            margin-left: 20px;
+            text-decoration: none;
+            color: rgba(61, 61, 188, 0.903);
+        }
+        
+
+    }
     .details {
         margin: 20px 20px 20px 20px;
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.99);

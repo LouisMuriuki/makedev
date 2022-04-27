@@ -8,6 +8,7 @@ import Projects from './pages/projects/Projects'
 import Courses from './pages/courses/Courses'
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
+import Details from './pages/communitydetatils/Details';
 
 function App() {
 
@@ -32,8 +33,8 @@ function App() {
                </Route>
               <Route path="community">
                 <Route index element={<RequireAuth><Community/></RequireAuth>} />
-                {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
-                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
+                 <Route path=":communityname" element={<RequireAuth><Details /></RequireAuth>} />
+                {/*<Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
               </Route> 
               <Route path="projects">
                 <Route index element={<RequireAuth><Projects/></RequireAuth>} />

@@ -4,11 +4,11 @@ import Trendingcard from '../../components/cards/Trendingcard'
 import Hero from '../../components/hero/Hero'
 import Navbar from '../../components/navbar/Navbar'
 import "./home.scss"
-import { community } from '../../Community'
+
 
 function Home() {
   const [courses, setCourses] = useState()
-  const [communities, setCommunities] = useState()
+  
 
   useEffect(() => {
     fetch('http://localhost:8000/Community').then(res => {
@@ -40,7 +40,7 @@ console.log(data)
       <div className='cards'>
       <h3>Join a community:</h3>
         <div className='communitycard'>
-          {community && <Communitycard Communities={courses} />}
+          {courses && <Communitycard Communities={courses} />}
         </div>
         <h3>Trending Courses</h3>
         <div className="trending">

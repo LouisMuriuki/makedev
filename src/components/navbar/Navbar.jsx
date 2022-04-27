@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './navbar.scss'
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
@@ -6,9 +6,9 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 function Navbar() {
 
-  const[drop, setDrop]=useState(false)
+  const [drop, setDrop] = useState(false)
 
-  const toggledrop=()=>{
+  const toggledrop = () => {
     setDrop(!drop)
 
   }
@@ -53,7 +53,7 @@ function Navbar() {
           <ul>
             <li>
               <NavLink to="/projects" className="nav-links">
-              Articles
+                Articles
               </NavLink>
             </li>
           </ul>
@@ -61,6 +61,7 @@ function Navbar() {
             <li>
               <NavLink to="/projects" className="nav-links">
                 <NotificationsNoneOutlinedIcon className='notification' />
+                <div className="counter">1</div>
               </NavLink>
             </li>
           </ul>
@@ -68,41 +69,42 @@ function Navbar() {
             <li>
               <NavLink to="/projects" className="nav-links">
                 <ChatBubbleOutlineOutlinedIcon className='message' />
+                <div className="counter">2</div>
               </NavLink>
             </li>
           </ul>
           <ul>
             <li>
-              <AccountBoxOutlinedIcon className="nav-links" onClick={toggledrop}/>
+              <AccountBoxOutlinedIcon className="nav-links" onClick={toggledrop} />
             </li>
           </ul>
           {drop && (
             <div className='account'>
-            <ul>
-              <li>
-                Your profile
-              </li>
-            </ul>
-            <ul>
-              <li>
-                Enrolled Courses
-              </li>
-            </ul >
-            <ul>
-              <li>
-                Your Projects
-              </li>
-              <hr />
-            </ul >
-            <ul>
-              <li>
-                Sign out
-              </li>
-            </ul>
-          </div>
+              <ul>
+                <li>
+                  Your profile
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Enrolled Courses
+                </li>
+              </ul >
+              <ul>
+                <li>
+                  Your Projects
+                </li>
+                <hr />
+              </ul >
+              <ul>
+                <li>
+                  Sign out
+                </li>
+              </ul>
+            </div>
           )
           }
-          
+
 
         </div >
       </div >

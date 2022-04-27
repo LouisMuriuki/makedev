@@ -2,145 +2,272 @@
     "Community": [
         {
             "communityname": "Web",
-            "id":1,
-            "courses":[
+            "id": "web",
+            "joined": true,
+            "courses": [
                 {
                     "title": "HTML and CSS",
                     "Img": "",
-                    "trending":false,
+                    "trending": false,
                     "instructor": "Manny Mulano",
                     "difficulty": "basic",
                     "lessons": "20",
                     "id": "1",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 1,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "JAVASCRIPT",
                     "Img": "",
-                    "trending":true,
+                    "trending": true,
                     "instructor": "Manny Mulano",
                     "difficulty": "basic",
                     "lessons": "25",
                     "id": "2",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 2,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "REACT JS",
                     "Img": "",
-                    "trending":true,
+                    "trending": true,
                     "instructor": "Joan Chebet",
                     "difficulty": "intermmediate",
                     "lessons": "27",
                     "id": "3",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 3,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "NODE JS",
                     "Img": "",
-                    "trending":true,
+                    "trending": true,
                     "instructor": "Louis Belair",
                     "difficulty": "intermmediate",
                     "lessons": "29",
                     "id": "4",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 4,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "PHP",
                     "Img": "",
-                    "trending":false,
+                    "trending": false,
                     "instructor": "Joan Chebet",
                     "difficulty": "intermmediate",
                     "lessons": "20",
                     "id": "5",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 5,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "SQL",
                     "Img": "",
-                    "trending":false,
+                    "trending": false,
                     "instructor": "Manny Mulano",
                     "difficulty": "intermmediate",
                     "lessons": "20",
                     "id": "6",
                     "type": "instructor led",
-                    "community": "Web"
+                    "community": "Web",
+                    "articles": [
+                        {
+                            "id": 6,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 }
-    
             ],
-            "articles":[
-
+            "posts": [
+                {
+                    "generalpost": [
+                        {
+                            "title": "wdwqdw",
+                            "id": 1,
+                            "comments": "",
+                            "details": "sqswdswdewdwdqwd",
+                            "by": "",
+                            "time": ""
+                        }
+                    ],
+                    "question": [
+                        {
+                            "title": "",
+                            "id": 1,
+                            "answers": "",
+                            "details": "sqswdswdewdwdqwd",
+                            "by": "",
+                            "time": ""
+                        }
+                    ]
+                }
             ]
         },
         {
             "communityname": "Mobile",
-            "id":2,
-            "courses":[
+            "id": "mobile",
+            "joined": false,
+            "courses": [
                 {
                     "title": "JAVA",
                     "Img": "",
-                    "trending":false,
+                    "trending": false,
                     "instructor": "Michael Richards",
                     "difficulty": "intermmediate",
                     "lessons": "40",
                     "id": "7",
                     "type": "instructor led",
-                    "community": "Mobile"
+                    "community": "Mobile",
+                    "articles": [
+                        {
+                            "id": 7,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "Kotlin",
                     "Img": "",
-                    "trending":true,
+                    "trending": true,
                     "instructor": "Michael Richards",
                     "difficulty": "intermmediate",
                     "lessons": "20",
                     "id": "8",
                     "type": "instructor led",
-                    "community": "Mobile"
-                }  
-            ],
-            "articles":[
-                {
-                    "title":"",
-                    "body":""
+                    "community": "Mobile",
+                    "articles": [
+                        {
+                            "id": 8,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 }
-                
-            ]
+            ],
+            "posts": {
+                "generalpost": [
+                    {
+                        "title": "",
+                        "id": 2,
+                        "comments": "",
+                        "details": "sqswdswdewdwdqwd",
+                        "by": "",
+                        "time": ""
+                    }
+                ],
+                "question": [
+                    {
+                        "title": "",
+                        "id": 2,
+                        "answers": "",
+                        "details": "sqswdswdewdwdqwd",
+                        "by": "",
+                        "time": ""
+                    }
+                ]
+            }
         },
         {
             "communityname": "DataScience",
-            "id":3,
-            "courses":[
+            "id": "dataScience",
+            "joined": true,
+            "courses": [
                 {
                     "title": "Python",
                     "Img": "",
-                    "trending":true,
+                    "trending": true,
                     "instructor": "Michael Richards",
                     "difficulty": "intermmediate",
                     "lessons": "20",
                     "id": "9",
                     "type": "instructor led",
-                    "community": "data-science"
+                    "community": "data-science",
+                    "articles": [
+                        {
+                            "id": 9,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 },
                 {
                     "title": "R programming language",
                     "Img": "",
-                    "trending":false,
+                    "trending": false,
                     "instructor": "Michael Richards",
                     "difficulty": "intermmediate",
                     "lessons": "20",
                     "id": "10",
                     "type": "instructor led",
-                    "community": "data-science"
+                    "community": "data-science",
+                    "articles": [
+                        {
+                            "id": 10,
+                            "title": "",
+                            "body": ""
+                        }
+                    ]
                 }
             ],
-            "articles":[
-                
-            ]
+            "posts": {
+                "generalpost": [
+                    {
+                        "title": "",
+                        "id": 3,
+                        "comments": "",
+                        "details": "sqswdswdewdwdqwd",
+                        "by": "",
+                        "time": ""
+                    }
+                ],
+                "question": [
+                    {
+                        "title": "",
+                        "id": 4,
+                        "answers": "",
+                        "details": "sqswdswdewdwdqwd",
+                        "by": "",
+                        "time": ""
+                    }
+                ]
+            }
         }
     ]
 }

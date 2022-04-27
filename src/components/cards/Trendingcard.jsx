@@ -7,7 +7,6 @@ function Coursecard({ Courses }) {
         <>
             {Courses && Courses.map(course => (
 
-
                         < >
                             {course.courses && course.courses.map(language => (
                                 <>

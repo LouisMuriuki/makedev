@@ -45,6 +45,7 @@
                 right:15px;
                 z-index:999;
                 padding:10px;
+                cursor: pointer;
 
                 ul {
                     cursor:pointer;
@@ -76,7 +77,25 @@
                     .nav-links {
                         text-decoration: none;
                         padding: 0.5rem 1rem;
-                        color:#000
+                        color:#000;
+                        position: relative;
+                        cursor: pointer;
+                        .counter {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            background-color: rgba(61, 61, 188, 0.903);
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            font-size: 10px;
+                            font-weight: bold;
+                            position: absolute;
+                            top: 0px;
+                            left: 3px;
+                        }
+                        
                     }
 
                     .nav-links:hover,

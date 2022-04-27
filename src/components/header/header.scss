@@ -1,0 +1,23 @@
+.header {
+    margin: 20px 0 20px 0;
+
+    .container {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            .navlink {
+                text-decoration: none;
+                list-style: none;
+                text-transform: uppercase;
+                display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+               
+            }
+        }
+    }
+}

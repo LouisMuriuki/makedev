@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import CommunityCard from '../../components/cards/Communitycard'
-import Enrolledcard from '../../components/cards/Enrolledcard'
+import Enrolledcommunity from '../../components/cards/Enrolledcommunity'
 import Navbar from '../../components/navbar/Navbar'
 import './community.scss'
 
@@ -9,19 +9,16 @@ import './community.scss'
 
 function Community() {
   const [communities, setCommunities] = useState()
-  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolled"))||[])
+  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcommunity"))||[])
   const [id,setId]=useState()
 
   useEffect(()=>{
 
-localStorage.setItem("enrolled",JSON.stringify(enrolled))
+localStorage.setItem("enrolledcommunity",JSON.stringify(enrolled))
 
   },[enrolled])
 
-  useEffect(()=>{
-    const check = localStorage.getItem('enrolled')
-    setEnrolled(JSON.parse(check))
-  },[enrolled])
+  
 
   useEffect(() => {
     fetch('http://localhost:8000/Community').then(res => {
@@ -45,7 +42,7 @@ setCommunities(data)
       <h3>Your Communities:</h3>
       <div className='enrolled'>
         <NavLink to ={`/community/${enrolled[enrolled.length-1]}`} className="navlink">
-      {<Enrolledcard Enrolled={enrolled} />}
+      {<Enrolledcommunity Enrolled={enrolled} />}
       </NavLink>
       </div>
       <div className="details">

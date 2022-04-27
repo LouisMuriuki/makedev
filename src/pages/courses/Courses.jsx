@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Coursecard from '../../components/cards/Coursecard'
 import Navbar from '../../components/navbar/Navbar'
+import Enrolledcourse from '../../components/cards/Enrolledcourse'
 import "./courses.scss"
 
 function Courses() {
   const [all ,setAll]=useState(null)
+  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcourse"))||[])
+  useEffect(()=>{
+
+    localStorage.setItem("enrolledcourse",JSON.stringify(enrolled))
+    
+      },[enrolled])
   useEffect(() => {
     fetch('http://localhost:8000/Community').then(res => {
       return res.json()
@@ -21,9 +28,11 @@ function Courses() {
   return (
     <div className='courses'>
       <Navbar/>
-      <h3>Courses</h3>
+      <h3>Enrolled Courses</h3>
+      <Enrolledcourse Enrolled={enrolled}/>
+      <h3>All Courses</h3>
       <div className='all'>
-      <Coursecard Courses={all}/>
+      {all &&<Coursecard Courses={all} setEnrolled={setEnrolled} />}
       </div>
     </div>
   )

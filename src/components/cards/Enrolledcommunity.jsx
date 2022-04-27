@@ -1,7 +1,7 @@
 import React from 'react'
 import "./card.scss"
 
-function Enrolledcard({Enrolled}) {
+function Enrolledcommunity({Enrolled}) {
     return (
         <>
          {Enrolled && Enrolled.map(enroll=>(
@@ -24,4 +24,4 @@ function Enrolledcard({Enrolled}) {
     
 
 
-export default Enrolledcard
+export default Enrolledcommunity

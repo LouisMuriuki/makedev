@@ -2,41 +2,25 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './header.scss'
 
-function Header() {
-  return (
-    <div className='header'>
-        <div className='container'>
-            <ul>
-                <NavLink to="" className="navlink">
-                <li>
-                    posts
-                </li>
-                </NavLink>
-            </ul>
-            <ul>
-                <NavLink to="" className="navlink">
-                <li>
-                    Questions
-                </li>
-                </NavLink>
-            </ul>
-            <ul>
-                <NavLink to="" className="navlink">
-                <li>
-                    Articles
-                </li>
-                </NavLink>
-            </ul>
-            <ul>
-                <NavLink to="" className="navlink">
-                <li>
-                    Projects
-                </li>
-                </NavLink>
-            </ul>
+function Header({setPosts,setQuestions,setArticles,setProjects}) {
+    
+    return (
+        <div className='header'>
+            <div className='container'>
+                    <button onClick={()=>{setPosts(true);setQuestions(false);setProjects(false)}}>
+                        {/* {console.log(prev)} */}
+                        Posts
+                    </button>
+                    <button onClick={()=>{setQuestions(true);setPosts(false);setProjects(false)}}>
+                        Questions
+                    </button>
+
+                    <button onClick={()=>{setProjects(true);setPosts(false);setQuestions(false)}}>
+                        Projects
+                    </button>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Header

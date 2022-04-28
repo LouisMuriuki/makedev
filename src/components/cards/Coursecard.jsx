@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./card.scss"
 
-function Coursecard({Courses,setEnrolled}) {
+function Coursecard({ Courses, setEnrolled }) {
+    const [disable, setDisable] = useState(false);
+    const disablebtn = () => {
+        setDisable(true)
+    }
 
     return (
         <>
@@ -19,8 +23,8 @@ function Coursecard({Courses,setEnrolled}) {
                                     <span><b>Difficulty:</b> {language.difficulty}</span>
                                 </div>
                                 <div className='add'>
-                                <p><b>Instructor: </b>{language.instructor}</p>
-                                <button onClick={()=>{setEnrolled(prev=>[...prev,language.title])}}>Enroll</button>
+                                    <p><b>Instructor: </b>{language.instructor}</p>
+                                    <button disabled={disable} onClick={() => { setEnrolled(prev => [...prev, language.title]) }}>Enroll</button>
                                 </div>
                             </div>
                         </div>)

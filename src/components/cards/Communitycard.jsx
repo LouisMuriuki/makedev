@@ -3,6 +3,10 @@ import "./card.scss"
 
 function CommunityCard({ Communities, setEnrolled,}) {
 console.log(Communities)
+const [disable, setDisable] =useState(false);
+const disablebtn=()=>{
+  setDisable(true)
+}
   return (
     <>
       {Communities && Communities.map(community=> (
@@ -14,7 +18,7 @@ console.log(Communities)
           <div className="bottom">
             <div className="add">
               <p>Community:{community.communityname}</p>
-              <button onClick={()=>{setEnrolled(prev=>[...prev,community.communityname])}}>Join</button>
+              <button disabled={disable} onClick={()=>{setEnrolled(prev=>[...prev,community.communityname])}}>Join</button>
               {console.log(community.id)}
             </div>
           </div>

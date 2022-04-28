@@ -18,8 +18,8 @@
                     "articles": [
                         {
                             "id": 1,
-                            "title": "qdwqd",
-                            "body": "dwwwqd"
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -36,8 +36,8 @@
                     "articles": [
                         {
                             "id": 2,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -54,8 +54,8 @@
                     "articles": [
                         {
                             "id": 3,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -72,8 +72,8 @@
                     "articles": [
                         {
                             "id": 4,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -90,8 +90,8 @@
                     "articles": [
                         {
                             "id": 5,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -108,8 +108,8 @@
                     "articles": [
                         {
                             "id": 6,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 }
@@ -118,21 +118,21 @@
                 {
                     "generalpost": [
                         {
-                            "title": "wdwqdw",
+                            "title": "The standard Lorem Ipsum passage, used since the 1500s",
                             "id": 1,
                             "comments": "",
-                            "details": "sqswdswdewdwdqwd",
-                            "by": "",
+                            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                            "by": "Louis Muriuki",
                             "time": ""
                         }
                     ],
                     "question": [
                         {
-                            "title": "",
+                            "title": "What is Lorem Ipsum",
                             "id": 1,
                             "answers": "",
-                            "details": "sqswdswdewdwdqwd",
-                            "by": "",
+                            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                            "by": "Louis Muriuki",
                             "time": ""
                         }
                     ]
@@ -157,8 +157,8 @@
                     "articles": [
                         {
                             "id": 7,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -175,34 +175,36 @@
                     "articles": [
                         {
                             "id": 8,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 }
             ],
-            "posts": {
-                "generalpost": [
-                    {
-                        "title": "",
-                        "id": 2,
-                        "comments": "",
-                        "details": "sqswdswdewdwdqwd",
-                        "by": "",
-                        "time": ""
-                    }
-                ],
-                "question": [
-                    {
-                        "title": "",
-                        "id": 2,
-                        "answers": "",
-                        "details": "sqswdswdewdwdqwd",
-                        "by": "",
-                        "time": ""
-                    }
-                ]
-            }
+            "posts": [
+                {
+                    "generalpost": [
+                        {
+                            "title": "The standard Lorem Ipsum passage, used since the 1500s",
+                            "id": 2,
+                            "comments": "",
+                            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                            "by": "Louis Muriuki",
+                            "time": ""
+                        }
+                    ],
+                    "question": [
+                        {
+                            "title": "What is Lorem Ipsum",
+                            "id": 2,
+                            "answers": "",
+                            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                            "by": "Louis Muriuki",
+                            "time": ""
+                        }
+                    ]
+                }
+            ]
         },
         {
             "communityname": "DataScience",
@@ -222,8 +224,8 @@
                     "articles": [
                         {
                             "id": 9,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 },
@@ -240,34 +242,36 @@
                     "articles": [
                         {
                             "id": 10,
-                            "title": "",
-                            "body": ""
+                            "title": "What is Lorem Ipsum",
+                            "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                         }
                     ]
                 }
             ],
-            "posts": {
-                "generalpost": [
-                    {
-                        "title": "",
-                        "id": 3,
-                        "comments": "",
-                        "details": "sqswdswdewdwdqwd",
-                        "by": "",
-                        "time": ""
-                    }
-                ],
-                "question": [
-                    {
-                        "title": "",
-                        "id": 4,
-                        "answers": "",
-                        "details": "sqswdswdewdwdqwd",
-                        "by": "",
-                        "time": ""
-                    }
-                ]
-            }
+            "posts": [
+                {
+                    "generalpost": [
+                        {
+                            "title": "The standard Lorem Ipsum passage, used since the 1500s",
+                            "id": 3,
+                            "comments": "",
+                            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                            "by": "Louis Muriuki",
+                            "time": ""
+                        }
+                    ],
+                    "question": [
+                        {
+                            "title": "What is Lorem Ipsum",
+                            "id": 4,
+                            "answers": "",
+                            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                            "by": "Louis Muriuki",
+                            "time": ""
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -49,46 +49,52 @@ function Navbar() {
                 Space
               </NavLink>
             </li>
-          </ul>
+          </ul>*/}
           <ul>
             <li>
-              <NavLink to="/projects" className="nav-links">
+              <NavLink to="/articles" className="nav-links">
                 Articles
               </NavLink>
             </li>
-          </ul> */}
-          <ul>
-            <li>
-              <NavLink to="/projects" className="nav-links">
-                <NotificationsNoneOutlinedIcon className='notification' />
-                <div className="counter">1</div>
-              </NavLink>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <NavLink to="/projects" className="nav-links">
-                <ChatBubbleOutlineOutlinedIcon className='message' />
-                <div className="counter">2</div>
-              </NavLink>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <AccountBoxOutlinedIcon className="nav-links" onClick={toggledrop} />
-            </li>
-          </ul>
+          </ul> 
+          <div className="icons">
+            <ul>
+              <li>
+                <NavLink to="" className="nav-links">
+                  <NotificationsNoneOutlinedIcon className='notification' />
+                  <div className="counter">1</div>
+                </NavLink>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <NavLink to="/profile" className="nav-links">
+                  <ChatBubbleOutlineOutlinedIcon className='message' />
+                  <div className="counter">2</div>
+                </NavLink>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <AccountBoxOutlinedIcon className="nav-links" onClick={toggledrop} />
+              </li>
+            </ul>
+          </div>
           {drop && (
             <div className='account'>
               <ul>
-                <li>
-                  Your profile
-                </li>
+                <NavLink to="/profile" className="nav-links">
+                  <li>
+                    Your profile
+                  </li>
+                </NavLink>
               </ul>
               <ul>
-                <li>
-                  Enrolled Courses
-                </li>
+                <NavLink to="/courses" className="nav-links">
+                  <li>
+                    Enrolled Courses
+                  </li>
+                </NavLink>
               </ul >
               <ul>
                 <li>

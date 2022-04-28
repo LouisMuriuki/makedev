@@ -27,9 +27,17 @@
 
         .links {
             display: flex;
-            margin-left: 40%;
+            margin-left: 50%;
             position:relative;
             align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            .icons{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+            }
 
             .account {
                 display: flex;
@@ -63,13 +71,11 @@
 
             ul {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-
 
                 li {
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     list-style: none;
                     text-decoration: none;
                     font-size: 21px;

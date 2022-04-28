@@ -28,11 +28,15 @@
             width:100%; 
 
             button{
-                background-color: rgba(61, 61, 188, 0.903);;
+                background-color: rgba(61, 61, 188, 0.903);
                 color: rgb(254, 254, 254);
                 padding: 8px;
                 border:none;
                 cursor:pointer;
+                &:disabled{
+                    cursor:not-allowed;
+                    background-color: rgba(61, 61, 188, 0.282);
+                }
             }
         }
     }

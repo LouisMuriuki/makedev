@@ -1,0 +1,21 @@
+.Articles {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        margin-bottom: 20px;
+        h2{
+            text-decoration: underline;
+            color: rgba(61, 61, 188, 0.903);
+            font-size: 40px;
+
+        }
+    }.body{
+        display: flex;
+        text-overflow:break;
+        p{
+            font-size: 21px;;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.posts{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title{
+                h4{font-size: 23px;}
+            }
+            .user{
+                span{
+                    font-style: 14px;
+                    color:rgba(61, 61, 188, 0.903);
+                }
+            }
+        }
+        .postdetails{
+            display: flex;
+            p{
+                font-size: 20px;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            color:rgba(61, 61, 188, 0.903);
+
+        }
+    }
+}

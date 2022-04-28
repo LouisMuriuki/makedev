@@ -9,6 +9,7 @@ import Courses from './pages/courses/Courses'
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
 import Details from './pages/communitydetatils/Details';
+import Articles from './components/articles/Articles';
 
 function App() {
 
@@ -38,6 +39,11 @@ function App() {
               </Route> 
               <Route path="projects">
                 <Route index element={<RequireAuth><Projects/></RequireAuth>} />
+                {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
+                <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
+              </Route> 
+              <Route path="articles">
+                <Route index element={<RequireAuth><Articles/></RequireAuth>} />
                 {/* <Route path=":userId" element={<RequireAuth><Single /></RequireAuth>} />
                 <Route path="new" element={<RequireAuth><New inputs={userInputs} title="Add New User" /></RequireAuth>} /> */}
               </Route> 

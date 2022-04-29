@@ -1,0 +1,54 @@
+.createspace {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+
+    button {
+        border-radius: 3px;
+        background-color: rgb(40, 40, 165);
+        padding: 5px;
+        cursor: pointer;
+        color:whitesmoke;
+        border: none;
+    }
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    
+
+    
+    .space {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.249);
+        padding: 10px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+
+            }
+
+            .info {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                button {
+                    border-radius: 3px;
+                    background-color: rgb(40, 40, 165);
+                    padding: 5px;
+                    cursor: pointer;
+                    color:whitesmoke;
+                    border: none;
+                    margin:10px
+                }
+            }
+        }
+    }
+}

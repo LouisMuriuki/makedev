@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './question.scss'
 
-function question({ Data }) {
+
+function Question({ Data }) {
+
+  const[answer,setAnswer]=useState(false)
   return (
     <>
       {Data && Data.map(post => (
@@ -12,19 +16,20 @@ function question({ Data }) {
                   <div className="container">
                     <div className="top">
                       <h4>{question.title}</h4>
-                      <span></span>
+                      <span>by:{question.by}</span>
                     </div>
                     <div className="content">
                       <p>{question.details}</p>
                     </div>
-                    <button>Answer</button>
-                    <div className="answer">
-                      <div className="container">
-                        <textarea></textarea>
-                        <button>Post Answer</button>
-                      </div>
-                    </div>
                   </div>
+                  {<button onClick={()=>setAnswer(prev=>!prev)}>Click to Answer</button>}
+                  {answer && <div className="answer">
+                    <div className="container">
+                      <textarea></textarea>
+                      <button onClick={()=>setAnswer(false)}>Post Answer</button>
+                    </div>
+                  </div>}
+
 
                 </div>))}
             </>
@@ -37,4 +42,4 @@ function question({ Data }) {
   )
 }
 
-export default question
+export default Question

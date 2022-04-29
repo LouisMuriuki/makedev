@@ -21,5 +21,27 @@
                 cursor:pointer;
                
             }
+            .minicontainer{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+        
+                button {
+                        text-decoration: none;
+                        list-style: none;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border: 1px solid rgba(0, 0, 0, 0.378);
+                        background-color: rgba(61, 61, 188, 0.903);
+                        padding:10px;
+                        color:#fff;
+                        cursor:pointer;
+                       
+                    }
+
+            }
     }
 }

@@ -4,6 +4,9 @@ import Trendingcard from '../../components/cards/Trendingcard'
 import Hero from '../../components/hero/Hero'
 import Navbar from '../../components/navbar/Navbar'
 import "./home.scss"
+import {motion} from "framer-motion"
+import { NavLink } from 'react-router-dom'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 function Home() {
@@ -22,9 +25,13 @@ console.log(data)
 
   }, [])
   return (
-    <div className='home'>
+    <motion.div className='home'
+    animate={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition={{duration:0.5}}>
       <Navbar />
-      <Hero />
+      <Hero title="Learning That gets you" text="Skills for your present and future.Get started with us"/> 
       <div className="details">
         <h3>Communities</h3>
         <p>Join a community today and get access to free resources including but not limited to the below mentioned.</p>
@@ -36,18 +43,17 @@ console.log(data)
           <li>Attend Webinars</li>
         </ul>
         <p>What are you waiting for join a community today</p>
+        <NavLink to="/community" className="navlink">
+          <p>Go to Community<ArrowForwardIcon/></p>
+        </NavLink>
       </div>
       <div className='cards'>
-      <h3>Join a community:</h3>
-        <div className='communitycard'>
-          {courses && <Communitycard Communities={courses} />}
-        </div>
         <h3>Trending Courses</h3>
         <div className="trending">
           {courses && <Trendingcard Courses={courses} />}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

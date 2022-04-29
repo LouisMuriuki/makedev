@@ -3,7 +3,7 @@ import './signup.scss'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase"
 import { NavLink, useNavigate } from "react-router-dom"
-
+import {motion} from "framer-motion"
 
 
 function Signup() {
@@ -49,7 +49,11 @@ function Signup() {
 
   }
   return (
-    <div className="signup">
+    <motion.div className="signup"
+    animate={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition={{duration:0.5}}>
       <div className="container">
         <div className="left">
           <h2>Welcome to MakeDev <br /> Create your account below</h2>
@@ -66,7 +70,7 @@ function Signup() {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

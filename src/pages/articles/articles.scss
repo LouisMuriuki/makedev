@@ -1,19 +1,20 @@
 .Articles {
     display: flex;
     flex-direction: column;
+    margin: 10px 20% 20px 20%;
+    background-color: rgba(124, 187, 227, 0.264);
 
     .title {
         display: flex;
         margin-bottom: 20px;
         h2{
-            text-decoration: underline;
-            color: rgba(61, 61, 188, 0.903);
-            font-size: 40px;
+            font-size: 30px;
 
         }
     }.body{
         display: flex;
         text-overflow:break;
+
         p{
             font-size: 21px;;
         }

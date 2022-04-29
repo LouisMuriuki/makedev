@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 import CommunityCard from '../../components/cards/Communitycard'
 import Enrolledcommunity from '../../components/cards/Enrolledcommunity'
 import Navbar from '../../components/navbar/Navbar'
 import './community.scss'
-
+import {motion} from "framer-motion"
 
 
 function Community() {
   const [communities, setCommunities] = useState()
   const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcommunity"))||[])
   const [id,setId]=useState()
-
+  let params=useParams()
+console.log(params)
   useEffect(()=>{
 
 localStorage.setItem("enrolledcommunity",JSON.stringify(enrolled))
@@ -31,17 +32,17 @@ setCommunities(data)
     })
 
   }, [])
-//   const [enrolled , setEnrolled]=useState()
 
-//  const handleClick=()=>{
-//     setEnrolled()
-//   }
   return (
-    <div className='community'>
+    <motion.div className='community'
+    animate={{opacity:1}}
+    initial={{opacity:0}}
+    exit={{opacity:0}}
+    transition={{duration:0.5}}>
       <Navbar/>
       <h3>Your Communities:</h3>
       <div className='enrolled'>
-        <NavLink to ={`/community/${enrolled[enrolled.length-1]}`} className="navlink">
+        <NavLink to ={`/community/${enrolled[enrolled.length -1] }`} className="navlink">
       {<Enrolledcommunity Enrolled={enrolled} />}
       </NavLink>
       </div>
@@ -63,7 +64,7 @@ setCommunities(data)
           {communities && <CommunityCard Communities={communities} setEnrolled={setEnrolled} setid={setId}/>}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

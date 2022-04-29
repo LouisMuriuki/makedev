@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase"
 import { NavLink, useNavigate } from "react-router-dom"
 import { AuthContext } from '../../context/AuthContext';
-
+import {motion} from "framer-motion"
 
 
 function Login() {
@@ -42,7 +42,11 @@ function Login() {
             });
     }
     return (
-        <div className="login">
+        <motion.div className="login"
+        animate={{opacity:1}}
+        initial={{opacity:0}}
+        exit={{opacity:0}}
+        transition={{duration:0.5}}>
             <div className="container">
             <div className="left">
                 <NavLink to='/signup' >
@@ -68,7 +72,7 @@ function Login() {
             </div>
             
 
-        </div>
+        </motion.div>
     )
 }
 

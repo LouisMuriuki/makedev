@@ -13,7 +13,11 @@
     .all,.enrolled {
         display: flex;
         flex-wrap: wrap;
-
+        .navlink{
+            display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        }
 
     }
 }

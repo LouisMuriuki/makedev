@@ -1,0 +1,25 @@
+.courseinfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(80, 111, 197);
+
+    .top,.bottom {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 40px 0 40px 0;
+        .instructor,.community,.type,.lessons,.difficulty{
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+    .mid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

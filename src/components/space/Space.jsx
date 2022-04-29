@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './space.scss'
 
 function Space({ Data, setEnrolled }) {

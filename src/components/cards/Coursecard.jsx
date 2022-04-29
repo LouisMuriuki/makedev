@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./card.scss"
 
 function Coursecard({ Courses, setEnrolled }) {

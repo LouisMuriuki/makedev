@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 import "./card.scss"
 
 function Coursecard({ Courses, setEnrolled }) {
-    const [disable, setDisable] = useState(false);
-    const disablebtn = () => {
-        setDisable(true)
-    }
 
     return (
         <>
@@ -24,7 +20,7 @@ function Coursecard({ Courses, setEnrolled }) {
                                 </div>
                                 <div className='add'>
                                     <p><b>Instructor: </b>{language.instructor}</p>
-                                    <button disabled={disable} onClick={() => { setEnrolled(prev => [...prev, language.title]) }}>Enroll</button>
+                                    <button  onClick={() => { setEnrolled(prev => [...prev, language.title]) }}>Enroll</button>
                                 </div>
                             </div>
                         </div>)

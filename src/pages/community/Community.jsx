@@ -10,7 +10,6 @@ import {motion} from "framer-motion"
 function Community() {
   const [communities, setCommunities] = useState()
   const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcommunity"))||[])
-  const [id,setId]=useState()
   let params=useParams()
 console.log(params)
   useEffect(()=>{

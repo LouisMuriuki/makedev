@@ -2,10 +2,7 @@ import React, { useState } from 'react'
 import './space.scss'
 
 function Space({ Data, setEnrolled }) {
-    const [disable, setDisable] = useState(false);
-    const disablebtn = () => {
-        setDisable(true)
-    }
+   
     return (
         <>
             <div className='createspace'>
@@ -24,7 +21,7 @@ function Space({ Data, setEnrolled }) {
                                     </div>
                                     <div className='info'>
                                         <p><b>Members:{Space.joined} </b></p>
-                                        <button disabled={disable} onClick={() => { setEnrolled(prev => [...prev, Space.title]) }}>Join</button>
+                                        <button onClick={() => { setEnrolled(prev => [...prev, Space.title]) }}>Join</button>
                                     </div>
                                 </div>
                             

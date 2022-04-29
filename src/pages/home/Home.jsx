@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Communitycard from '../../components/cards/Communitycard'
 import Trendingcard from '../../components/cards/Trendingcard'
 import Hero from '../../components/hero/Hero'
 import Navbar from '../../components/navbar/Navbar'

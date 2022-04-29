@@ -22,7 +22,7 @@ function Courseinfo({ Data, coursename }) {
                     <p><b>Instructor: </b>{language.instructor}</p>
                   </div>
                   <div className="community">
-                    <ClassIcon/>
+                    <ClassIconn/>
                     <p><b>Community: </b>{language.community}</p>
                   </div>
                   <div className="type">
@@ -54,7 +54,9 @@ function Courseinfo({ Data, coursename }) {
         </>)
       )}
     </>
-    
+    // <div className="courseinfo">
+
+    // </div>
   )
 }
 

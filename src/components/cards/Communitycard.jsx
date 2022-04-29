@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import "./card.scss"
 
 function CommunityCard({ Communities, setEnrolled,}) {
 console.log(Communities)
-const [disable, setDisable] =useState(false);
-const disablebtn=()=>{
-  setDisable(true)
-}
+
   return (
     <>
       {Communities && Communities.map(community=> (
@@ -18,7 +15,7 @@ const disablebtn=()=>{
           <div className="bottom">
             <div className="add">
               <p>Community:{community.communityname}</p>
-              <button disabled={disable} onClick={()=>{setEnrolled(prev=>[...prev,community.communityname])}}>Join</button>
+              <button  onClick={()=>{setEnrolled(prev=>[...prev,community.communityname])}}>Join</button>
               {console.log(community.id)}
             </div>
           </div>

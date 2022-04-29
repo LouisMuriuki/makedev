@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, {  useState } from 'react'
 import './signup.scss'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase"
@@ -21,20 +21,14 @@ function Signup() {
       e.preventDefault()
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-
-          const user = userCredential.user;
           navigate("/login")
-
-
-
         })
         .catch((error) => {
           setError(true)
           setEmail("")
           setPassword("")
           setPasswordval("")
-          const errorCode = error.code;
-          const errorMessage = error.message;
+
           // ..
         });
     } 

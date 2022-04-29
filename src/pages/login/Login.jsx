@@ -36,8 +36,7 @@ function Login() {
                 setError(true)
                 setEmail("")
                 setPassword("")
-                const errorCode = error.code;
-                const errorMessage = error.message;
+                
                 // ..
             });
     }

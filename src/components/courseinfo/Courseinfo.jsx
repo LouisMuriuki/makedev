@@ -11,9 +11,7 @@ function Courseinfo({ Data, coursename }) {
       {console.log(coursename)}
       {Data && Data.map(course => (
         <>
-          {course.courses && course.courses.map(language => {
-            if (language.title.includes(coursename)) {
-              return(
+          {course.courses && course.courses.filter(language=>language.title.includes(coursename)).map(language => (
               <div className="courseinfo" key={language.id}>
                 {console.log(language.difficulty)}
                 <div className="top">
@@ -22,7 +20,7 @@ function Courseinfo({ Data, coursename }) {
                     <p><b>Instructor: </b>{language.instructor}</p>
                   </div>
                   <div className="community">
-                    <ClassIconn/>
+                    <ClassIcon/>
                     <p><b>Community: </b>{language.community}</p>
                   </div>
                   <div className="type">
@@ -45,9 +43,8 @@ function Courseinfo({ Data, coursename }) {
                     </div>
                   </div>
                 
-              </div>)
-            }
-          }
+              </div>
+          )
 
           )}
 

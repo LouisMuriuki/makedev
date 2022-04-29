@@ -60,7 +60,7 @@ setCommunities(data)
       <div className='cards'>
         <h3>Join a community:</h3>
         <div className='communitycard'>
-          {communities && <CommunityCard Communities={communities} setEnrolled={setEnrolled} setid={setId}/>}
+          {communities && <CommunityCard Communities={communities} setEnrolled={setEnrolled}/>}
         </div>
       </div>
     </motion.div>

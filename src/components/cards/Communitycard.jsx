@@ -1,7 +1,7 @@
 import React from 'react'
 import "./card.scss"
 
-function CommunityCard({ Communities, setEnrolled,}) {
+function CommunityCard({ Communities, setEnrolled,setLink}) {
 console.log(Communities)
 
   return (
@@ -15,7 +15,7 @@ console.log(Communities)
           <div className="bottom">
             <div className="add">
               <p>Community:{community.communityname}</p>
-              <button  onClick={()=>{setEnrolled(prev=>[...prev,community.communityname])}}>Join</button>
+              <button  onClick={()=>{setEnrolled(prev=>[...prev,community.communityname]);setLink(community.communityname)}}>Join</button>
               {console.log(community.id)}
             </div>
           </div>

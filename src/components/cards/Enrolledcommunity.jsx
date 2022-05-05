@@ -11,7 +11,7 @@ function Enrolledcommunity({Enrolled}) {
         </div>
         <div className="bottom">
             <div className="add">
-                <p>Community:{enroll}</p>
+                <p>COMMUNITY: {enroll}</p>
             </div>
         </div>
     </div>

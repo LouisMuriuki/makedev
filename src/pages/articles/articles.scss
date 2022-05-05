@@ -1,8 +1,11 @@
 .Articles {
     display: flex;
     flex-direction: column;
-    margin: 10px 20% 20px 20%;
-    background-color: rgba(124, 187, 227, 0.264);
+    margin: 10px 15% 20px 15%;
+    border: 3px dashed  rgba(124, 187, 227, 0.264);
+    padding:10px;
+
+    
 
     .title {
         display: flex;

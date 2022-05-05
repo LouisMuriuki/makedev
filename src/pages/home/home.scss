@@ -1,25 +1,20 @@
 .home {
 
     .details {
-        margin: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin: 20px;
         padding: 10px;
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.99);
-        .navlink{
-            text-decoration: none;
-            p{
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                width: 100%;
-                
-            }
-           
-        }
+        
         h3 {
             margin: 10px 0 20px 30px;
             font-weight: 600;
             font-size: 2rem;
             display: flex;
+            justify-content: center;
+            text-transform: uppercase;
         }
 
         p {
@@ -39,6 +34,17 @@
                 list-style: lower-roman;
             }
 
+        }
+        .navlink{
+            text-decoration: none;
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                
+            }
+           
         }
         
     }

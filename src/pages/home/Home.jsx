@@ -43,7 +43,7 @@ console.log(data)
         </ul>
         <p>What are you waiting for join a community today</p>
         <NavLink to="/community" className="navlink">
-          <p>Go to Community<ArrowForwardIcon/></p>
+          <p>Join a Community<ArrowForwardIcon/></p>
         </NavLink>
       </div>
       <div className='cards'>

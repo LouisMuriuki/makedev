@@ -10,7 +10,7 @@ function Hero({title,text}) {
       <div className='text'>
         <h4>{title}</h4>
         <p>{text}</p>
-        <NavLink to="/courses">
+        <NavLink to="/courses" className="navlink">
         <button>Explore Courses</button>
         </NavLink>
       </div>

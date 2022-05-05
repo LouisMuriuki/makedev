@@ -4,28 +4,33 @@ import CommunityCard from '../../components/cards/Communitycard'
 import Enrolledcommunity from '../../components/cards/Enrolledcommunity'
 import Navbar from '../../components/navbar/Navbar'
 import './community.scss'
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 
 function Community() {
   const [communities, setCommunities] = useState()
-  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcommunity"))||[])
-  let params=useParams()
-console.log(params)
-  useEffect(()=>{
+  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcommunity")) || [])
+  let params = useParams()
+  console.log(params)
+  useEffect(() => {
 
-localStorage.setItem("enrolledcommunity",JSON.stringify(enrolled))
+    localStorage.setItem("enrolledcommunity", JSON.stringify(enrolled))
 
-  },[enrolled])
+  }, [enrolled])
 
-  
+  const [link, setLink] = useState(JSON.parse(localStorage.getItem("communitylink")) || [])
+  useEffect(() => {
+
+    localStorage.setItem("communitylink", JSON.stringify(link))
+
+  }, [link])
 
   useEffect(() => {
     fetch('http://localhost:8000/Community').then(res => {
       return res.json()
     }).then(data => {
-console.log(data)
-setCommunities(data)
+      console.log(data)
+      setCommunities(data)
 
 
     })
@@ -34,16 +39,16 @@ setCommunities(data)
 
   return (
     <motion.div className='community'
-    animate={{opacity:1}}
-    initial={{opacity:0}}
-    exit={{opacity:0}}
-    transition={{duration:0.5}}>
-      <Navbar/>
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}>
+      <Navbar />
       <h3>Your Communities:</h3>
       <div className='enrolled'>
-        <NavLink to ={`/community/${enrolled[enrolled.length -1] }`} className="navlink">
-      {<Enrolledcommunity Enrolled={enrolled} />}
-      </NavLink>
+        <NavLink to={`/community/${link}`} className="navlink">
+          {<Enrolledcommunity Enrolled={enrolled} />}
+        </NavLink>
       </div>
       <div className="details">
         <h3>Communities</h3>
@@ -60,7 +65,7 @@ setCommunities(data)
       <div className='cards'>
         <h3>Join a community:</h3>
         <div className='communitycard'>
-          {communities && <CommunityCard Communities={communities} setEnrolled={setEnrolled}/>}
+          {communities && <CommunityCard Communities={communities} setEnrolled={setEnrolled} setLink={setLink} />}
         </div>
       </div>
     </motion.div>

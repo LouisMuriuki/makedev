@@ -1,0 +1,29 @@
+.cdetailsbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .buttons{
+        display: flex;
+
+        button{
+            width:10.5em;
+            padding:1.5em;
+            border:1px solid rgba(128, 128, 128, 0.22);
+            background-color: rgba(128, 128, 128, 0.11);
+            &:focus,
+            :active{
+                border: none;
+                background-color: #fff;
+                border-top: 2px solid rgb(84, 84, 163) ;
+                color:rgb(84, 84, 163) ;
+            }
+            &:hover{
+                cursor:pointer;
+            }
+        }
+       
+
+
+    }
+}

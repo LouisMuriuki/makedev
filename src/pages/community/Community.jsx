@@ -4,6 +4,7 @@ import CommunityCard from '../../components/cards/Communitycard'
 import Enrolledcommunity from '../../components/cards/Enrolledcommunity'
 import Navbar from '../../components/navbar/Navbar'
 import './community.scss'
+import DoneIcon from '@mui/icons-material/Done';
 import { motion } from "framer-motion"
 
 
@@ -54,11 +55,11 @@ function Community() {
         <h3>Communities</h3>
         <p>Join a community today and get access to free resources including but not limited to the below mentioned.</p>
         <ul>
-          <li>Access to relevant courses</li>
-          <li>Work on projects together with other developers</li>
-          <li>Ask relevant questions and get answers Questions </li>
-          <li>Engage in coding Challenges</li>
-          <li>Attend Webinars</li>
+          <li><DoneIcon/> Access to relevant courses</li>
+          <li><DoneIcon/> Work on projects together with other developers</li>
+          <li><DoneIcon/> Ask relevant questions and get answers Questions </li>
+          <li><DoneIcon/> Engage in coding Challenges</li>
+          <li><DoneIcon/> Attend Webinars</li>
         </ul>
         <p>What are you waiting for join a community today</p>
       </div>

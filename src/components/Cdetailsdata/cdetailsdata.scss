@@ -1,0 +1,57 @@
+.cdetailsdata{
+    display: flex;
+    flex-direction: column;
+    margin:20px 10% 20px 10%;
+    .overview{
+        .text{
+            p{
+                font-size: 20px;
+                color:rgb(80, 80, 80);
+                line-height: 40px;
+            }
+        }
+    }
+    .curriculum{
+        display: flex;
+        flex-direction: column;
+        h1{
+            padding:20px;
+        }
+        .lessons{
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-top: 3px solid rgba(128, 128, 128, 0.22);  
+            .piece{
+                cursor: pointer;
+                margin-bottom: 3px;
+                background-color: rgba(128, 128, 128, 0.11);;
+                display: flex;
+                height:3.5em;
+                justify-content: space-between;
+                align-items: center;
+                &:hover{
+                    .left,
+                    .right{
+                        color:rgb(84, 84, 163) ;
+                    }
+                }
+                .left,
+                .right{
+                    display: flex;
+                    align-items: center;
+                    margin:auto 20px auto 20px;
+
+                    p{
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

@@ -29,7 +29,7 @@ function Courseinfo({ Data, coursename }) {
               </div>
               <div className="mid">
                 <div className="title">
-                  <h4> {language.title}</h4>
+                  <h4>The complete {language.title} Course</h4>
                 </div>
               </div>
               <div className='bottom'>
@@ -37,7 +37,7 @@ function Courseinfo({ Data, coursename }) {
                   <CastForEducationIcon />
                   <p><b>Lessons: </b>{language.lessons}</p>
                 </div>
-                <div className="difficuly">
+                <div className="difficulty">
                   <p><b>Difficulty: </b>{language.difficulty}</p>
                 </div>
               </div>

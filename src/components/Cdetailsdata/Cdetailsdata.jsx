@@ -3,10 +3,17 @@ import DoneIcon from '@mui/icons-material/Done';
 import LockIcon from '@mui/icons-material/Lock';
 import ArticleIcon from '@mui/icons-material/Article';
 import "./cdetailsdata.scss"
-function Cdetailsdata({ Data, coursename }) {
+import Cdetailscontext from "../../Cdetailscontext"
+import {useContext} from 'react'
+function Cdetailsdata({ Data, coursename}) {
+    const{overview}=useContext(Cdetailscontext)
+    const{curriculum}=useContext(Cdetailscontext)
+    const{instructor}=useContext(Cdetailscontext)
+    const{review}=useContext(Cdetailscontext)
     return (
         <div className="cdetailsdata">
-            <div className="overview">
+            {console.log(overview)}
+          { overview && <div className="overview">
                 {Data && Data.map(course => (
                     <>
                         {course.courses && course.courses.filter(language => language.title.includes(coursename)).map(language => (
@@ -15,8 +22,8 @@ function Cdetailsdata({ Data, coursename }) {
                             </div>)
                         )}
                     </>))}
-            </div>
-            <div className='curriculum'>
+            </div>}
+            { curriculum && <div className='curriculum'>
                 <h1>Lessons</h1>
                 <div className="lessons">
                    <div className="piece">
@@ -68,8 +75,8 @@ function Cdetailsdata({ Data, coursename }) {
                        </div>
                    </div>
                 </div>
-            </div>
-            <div className="instructor">
+            </div>}
+           { instructor && <div className="instructor">
                 {Data && Data.map(course => (
                     <>
                         {course.courses && course.courses.filter(language => language.title.includes(coursename)).map(language => (
@@ -78,7 +85,7 @@ function Cdetailsdata({ Data, coursename }) {
                             </div>
                         ))}
                     </>))}
-            </div>
+            </div>}
 
         </div>
     )

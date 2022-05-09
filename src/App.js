@@ -10,6 +10,7 @@ import { AuthContext } from './context/AuthContext';
 import Details from './pages/communitydetatils/Details';
 import Articles from './pages/articles/Articles';
 import Cdetails from './pages/coursedetails/Cdetails';
+import {CdetailsProvider} from "./Cdetailscontext"
 
 function App() {
 
@@ -22,16 +23,19 @@ function App() {
 
   return (
     <div className="App">
+      <CdetailsProvider>
       <Router>
         <Routes>
           <Route path="/">
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
             <Route index element={<RequireAuth><Home /></RequireAuth>} />
+            
             <Route path="courses">
               <Route index element={<RequireAuth><Courses /></RequireAuth>} />
-              <Route path=":coursename" element={<RequireAuth><Cdetails /></RequireAuth>} />
+              <Route path=":coursename" element={<RequireAuth><Cdetails/></RequireAuth>} />
             </Route>
+            
             <Route path="community">
               <Route index element={<RequireAuth><Community /></RequireAuth>} />
               <Route path=":communityname" element={<RequireAuth><Details /></RequireAuth>} />
@@ -42,6 +46,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      </CdetailsProvider>
     </div>
   );
 }

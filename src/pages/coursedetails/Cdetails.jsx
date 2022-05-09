@@ -9,16 +9,12 @@ import './cdetails.scss'
 import Cdetailsbtn from '../../components/Cdetailsbtn/Cdetailsbtn'
 import Cdetailsdata from '../../components/Cdetailsdata/Cdetailsdata'
 
+
 function Cdetails() {
+
     let params=useParams()
     const [info, setInfo] = useState(true)
     const [projects, SetProjects] = useState(false)
-
-    const[overview,setOverview]=useState(true)
-    const[curriculum,setCurriculum]=useState(false)
-    const[instructor,setInstructor]=useState(false)
-    const[review,setreview]=useState(false)
-
     
     const [all, setAll] = useState()
 
@@ -49,10 +45,10 @@ function Cdetails() {
 
             </div>
             <div className="buttons">
-                <Cdetailsbtn Data={all} coursename={params.coursename}/>
+                <Cdetailsbtn Data={all} coursename={params.coursename} />
             </div>
             <div className="data">
-                <Cdetailsdata Data={all} coursename={params.coursename}/>
+                <Cdetailsdata Data={all} coursename={params.coursename} />
             </div>
         </motion.div>
     )

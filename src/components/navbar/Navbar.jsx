@@ -22,6 +22,13 @@ function Navbar() {
           </NavLink>
         </div>
         <div className='links'>
+        <ul>
+            <li>
+              <NavLink to="/" className="nav-links">
+                Home
+              </NavLink>
+            </li>
+          </ul>
           <ul>
             <li>
               <NavLink to="/courses" className="nav-links">

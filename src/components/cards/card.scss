@@ -1,15 +1,15 @@
 .card {
     display: flex;
-    margin: 20px 10px 20px 13px;
+    margin: 20px;
     border: 1px solid rgba(0, 0, 0, 0.293);
     box-shadow: 2px 3px 10px 1px rgba(201, 201, 201, 0.857);
     cursor: pointer;
     flex-direction: column;
-    width: fit-content;
+    width: 22em;
     border-radius: 5px;
 
     &:hover {
-        box-shadow: 2px 4px 10px 1px rgb(148, 148, 148);
+        box-shadow: 3px 8px 15px 1px rgb(148, 148, 148);
         transform: translateY(-20px);
         transition: 0.3s ease-in-out;
     }
@@ -35,6 +35,9 @@
             align-items: center;
             width: 100%;
             margin-bottom: 2em;
+            span{
+                margin: 0 0 0 15px;
+            }
         }
 
         .add {
@@ -45,7 +48,7 @@
             width: 100%;
             margin-bottom: 2em;
             span{
-                margin: 0 0 0 7px;
+                margin: 0 0 0 15px;
             }
 
             button {

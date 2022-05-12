@@ -5,6 +5,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import "./cdetailsdata.scss"
 import Cdetailscontext from "../../Cdetailscontext"
 import {useContext} from 'react'
+import PersonIcon from '@mui/icons-material/Person';
 function Cdetailsdata({ Data, coursename}) {
     const{overview}=useContext(Cdetailscontext)
     const{curriculum}=useContext(Cdetailscontext)
@@ -81,6 +82,7 @@ function Cdetailsdata({ Data, coursename}) {
                     <>
                         {course.courses && course.courses.filter(language => language.title.includes(coursename)).map(language => (
                             <div className="text" key={language.id}>
+                                <span><PersonIcon sx={{fontSize:60}}/></span>
                                 <p>{language.instructor}</p>
                             </div>
                         ))}

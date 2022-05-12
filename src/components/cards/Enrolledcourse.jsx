@@ -3,6 +3,7 @@ import CourseContext from '../../context/CourseContext'
 
 function Enrolledcourse() {
     const{enrolled}=useContext(CourseContext)
+    const{setTitle}=useContext(CourseContext)
   return (
     <>
     {enrolled && enrolled.map(enroll=>(
@@ -12,7 +13,7 @@ function Enrolledcourse() {
    </div>
    <div className="bottom">
        <div className="add">
-           <p><b>Course:</b>{enroll.title}</p>
+           <p><b>Course:</b>{enroll.title} {setTitle(prev=>[...prev,enroll.title])}</p>
        </div>
    </div>
 </div>

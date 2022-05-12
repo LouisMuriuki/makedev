@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import CourseContext from '../../context/CourseContext'
 
-function Enrolledcourse({Enrolled}) {
+function Enrolledcourse() {
+    const{enrolled}=useContext(CourseContext)
   return (
     <>
-    {Enrolled && Enrolled.map(enroll=>(
-       <div className="card" >
+    {enrolled && enrolled.map(enroll=>(
+       <div className="card" key={enroll.id}>
    <div className="top">
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0KizZsbacUiCja9vMoHcTex3XwsVth9Ifw&usqp=CAU" alt="" className="image" />
+       <img src={enroll.Img} alt="" className="image" />
    </div>
    <div className="bottom">
        <div className="add">
-           <p>Course:{enroll}</p>
+           <p><b>Course:</b>{enroll.title}</p>
        </div>
    </div>
 </div>

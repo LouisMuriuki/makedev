@@ -14,7 +14,7 @@ console.log(Communities)
           </div>
           <div className="bottom">
             <div className="add">
-              <p>Community:{community.communityname}</p>
+              <p><b>Community:</b>{community.communityname}</p>
               <button  onClick={()=>{setEnrolled(prev=>[...prev,community.communityname]);setLink(community.communityname)}}>Join</button>
               {console.log(community.id)}
             </div>

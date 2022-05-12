@@ -36,11 +36,11 @@ console.log(data)
         <h3>Communities</h3>
         <p>Join a community today and get access to free resources including but not limited to the below mentioned.</p>
         <ul>
-          <li><DoneIcon/> Access to relevant courses</li>
-          <li><DoneIcon/> Work on projects together with other developers</li>
-          <li><DoneIcon/> Ask relevant questions and get answers Questions </li>
-          <li><DoneIcon/> Engage in coding Challenges</li>
-          <li><DoneIcon/> Attend Webinars</li>
+          <li><span><DoneIcon/></span> Access to relevant courses</li>
+          <li><span><DoneIcon/></span> Work on projects together with other developers</li>
+          <li><span><DoneIcon/></span> Ask relevant questions and get answers Questions </li>
+          <li><span><DoneIcon/></span> Engage in coding Challenges</li>
+          <li><span><DoneIcon/></span> Attend Webinars</li>
         </ul>
         <p>What are you waiting for join a community today</p>
         <NavLink to="/community" className="navlink">

@@ -1,27 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useContext } from 'react'
 import Coursecard from '../../components/cards/Coursecard'
 import Navbar from '../../components/navbar/Navbar'
 import Enrolledcourse from '../../components/cards/Enrolledcourse'
 import "./courses.scss"
 import { NavLink } from 'react-router-dom'
 import { motion } from "framer-motion"
+import CourseContext from '../../context/CourseContext'
 
 function Courses() {
   const [all, setAll] = useState(null)
-  const [enrolled, setEnrolled] = useState(JSON.parse(localStorage.getItem("enrolledcourse")) || [])
-  useEffect(() => {
 
-    localStorage.setItem("enrolledcourse", JSON.stringify(enrolled))
-
-  }, [enrolled])
-
-  
-  const [link, setLink] = useState(JSON.parse(localStorage.getItem("courselink")) || [])
-  useEffect(() => {
-
-    localStorage.setItem("courselink", JSON.stringify(link))
-
-  }, [link])
+  const{link}=useContext(CourseContext)
 
   useEffect(() => {
     fetch('http://localhost:8000/Community').then(res => {
@@ -41,13 +30,13 @@ function Courses() {
       <h3>Enrolled Courses</h3>
       <div className='enrolled'>
         <NavLink to={`/courses/${link}`} className="navlink">
-          {<Enrolledcourse Enrolled={enrolled} />}
+          {<Enrolledcourse />}
         </NavLink>
       </div>
       <h3>All Courses</h3>
       <div className='all'>
         {/* <NavLink to={`/courses/${link}`} className="navlink"> */}
-          {all && <Coursecard Courses={all} setEnrolled={setEnrolled} setLink={setLink} />}
+          {all && <Coursecard Courses={all}/>}
         {/* </NavLink> */}
       </div>
     </motion.div>

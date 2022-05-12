@@ -15,6 +15,7 @@
     }
     .top{
         height: fit-content;
+        font-size: 1em;
         img {
             border-radius: 3px;
             width: 100%;
@@ -24,17 +25,24 @@
    
 
     .bottom {
+        font-size: 1em;
         padding: 10px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        b{
+            color:#fb8500;
+            font-size: 19px;
+         }
 
         .info {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 1em;
             width: 100%;
             margin-bottom: 2em;
+            
             span{
                 margin: 0 0 0 15px;
             }
@@ -47,12 +55,16 @@
             align-items: center;
             width: 100%;
             margin-bottom: 2em;
+            b{
+                color: #fb8500;
+                font-size: 19px;
+             }
             span{
                 margin: 0 0 0 15px;
             }
 
             button {
-                background-color: rgba(61, 61, 188, 0.903);
+                background-color: #023047;
                 color: rgb(254, 254, 254);
                 padding: 8px;
                 border: none;

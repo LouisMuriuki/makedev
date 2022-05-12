@@ -11,6 +11,7 @@ import Details from './pages/communitydetatils/Details';
 import Articles from './pages/articles/Articles';
 import Cdetails from './pages/coursedetails/Cdetails';
 import {CdetailsProvider} from "./Cdetailscontext"
+import {CourseProvider} from './context/CourseContext'
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
 
   return (
     <div className="App">
-      <CdetailsProvider>
+      <CdetailsProvider> 
+      <CourseProvider> 
       <Router>
         <Routes>
           <Route path="/">
@@ -46,6 +48,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      </CourseProvider>
       </CdetailsProvider>
     </div>
   );

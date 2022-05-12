@@ -29,8 +29,11 @@
             li {
                 display: flex;
                 margin: 10px 0 10px 30px;
-                font-size: 18px;
+                font-size: 19px;
                 list-style: lower-roman;
+                span{
+                    color:#fb8500 ;
+                }
             }
 
         }
@@ -41,6 +44,7 @@
                 align-items: center;
                 justify-content: flex-start;
                 width: 100%;
+                color:#219ebc;
                 
             }
            

@@ -25,7 +25,7 @@ function Coursecard({ Courses }) {
                                 <div className='add'>
                                     <p><b>Instructor: </b>{language.instructor}</p>
                                     {console.log(enrolled[language.id])}
-                                    {enrolled[language.id] && enrolled[language.id].id===language.id?<button disabled>Enrolled</button>:<button onClick={() => {setEnrolled(prev => [...prev, { id: language.id, title: language.title, Img: language.Img }]); setLink(language.title)}}>Enroll</button>}
+                                    {enrolled[language.id] && (enrolled[language.id].id)===(language.id)?<button disabled>Enrolled</button>:<button onClick={() => {setEnrolled(prev => [...prev, { id: language.id, title: language.title, Img: language.Img }]); setLink(language.title)}}>Enroll</button>}
                                 </div>
                             </div>
                         </div>)

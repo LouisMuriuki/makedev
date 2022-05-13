@@ -1,10 +1,13 @@
-import React from 'react'
+import {React,useState} from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import InsertCommentIcon from '@mui/icons-material/InsertComment';
 import ShareIcon from '@mui/icons-material/Share';
 import './posts.scss'
 
 function Posts({ Data, communitynames }) {
+
+    const [active,setActive]=useState(false)
 
     return (
         <>
@@ -13,7 +16,7 @@ function Posts({ Data, communitynames }) {
                     {post.posts && post.posts.map(p => (
                         <>
                             {p.generalpost && p.generalpost.map(general => (
-                                <div className='posts'>
+                                <div className='posts'key={general.id}>
                                     {console.log(general.details)}
                                     <div className="container">
                                         <div className="top">
@@ -28,7 +31,7 @@ function Posts({ Data, communitynames }) {
                                             <p>{general.details}</p>
                                         </div>
                                         <div className="icons">
-                                            <FavoriteBorderIcon />
+                                            { active?<FavoriteIcon/>:<FavoriteBorderIcon onClick={()=>setActive(prev=>!prev)} />}
                                             <InsertCommentIcon />
                                             <ShareIcon />
 

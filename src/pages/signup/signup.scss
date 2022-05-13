@@ -21,6 +21,8 @@
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 20px;
+                color:#fb8500;
+                font-family: 'Proza Libre', sans-serif;
             }
             form {
                 display: flex;
@@ -35,14 +37,15 @@
                     margin: 10px;
                     border: none;
                     outline:none;
-                    border-bottom: 1px solid rgba(61, 61, 188, 0.903);
+                    border-bottom: 1px solid #023047;
+                    font-family: 'Poppins', sans-serif;
                 }
 
                 button {
                     width: 200px;
                     height: 30px;
                     border: none;
-                    background-color: rgba(61, 61, 188, 0.903);
+                    background-color: #fb8500;
                     color: white;
                     font-weight: bold;
                     cursor: pointer;

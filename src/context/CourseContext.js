@@ -9,12 +9,6 @@ export function CourseProvider({ children }) {
     localStorage.setItem("enrolledcourse", JSON.stringify(enrolled))
 
   }, [enrolled])
-  const [title, setTitle] = useState(JSON.parse(localStorage.getItem("coursetitle")) || [])
-  useEffect(() => {
-
-    localStorage.setItem("coursetitle", JSON.stringify(title))
-
-  }, [title])
 
   const [link, setLink] = useState(JSON.parse(localStorage.getItem("courselink")) || [])
   useEffect(() => {
@@ -24,7 +18,7 @@ export function CourseProvider({ children }) {
   }, [link])
 
   return (
-    <CourseContext.Provider value={{ enrolled, setEnrolled, link, setLink, setTitle, title }}>{children}</CourseContext.Provider>
+    <CourseContext.Provider value={{ enrolled, setEnrolled, link, setLink }}>{children}</CourseContext.Provider>
   )
 }
 

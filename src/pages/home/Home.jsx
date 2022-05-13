@@ -48,7 +48,7 @@ console.log(data)
         </NavLink>
       </div>
       <div className='cards'>
-        <h3>Trending Courses</h3>
+        <h2>Trending Courses</h2>
         <div className="trending">
           {courses && <Trendingcard Courses={courses} />}
         </div>

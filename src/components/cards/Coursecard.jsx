@@ -1,16 +1,12 @@
 import React, { useContext} from 'react'
 import "./card.scss"
-import { nanoid } from 'nanoid'
 import CourseContext from '../../context/CourseContext'
 
 function Coursecard({ Courses }) {
     const { enrolled } = useContext(CourseContext)
     const { setEnrolled } = useContext(CourseContext)
     const { setLink } = useContext(CourseContext)
-    console.log(enrolled)
 
-    const{title}=useContext(CourseContext)
-    
     return (
         <>
             {Courses && Courses.map(course => (
@@ -28,7 +24,8 @@ function Coursecard({ Courses }) {
                                 </div>
                                 <div className='add'>
                                     <p><b>Instructor: </b>{language.instructor}</p>
-                                    {language.title.includes(title)?<button disabled>Enrolled</button>:<button onClick={() => {setEnrolled(prev => [...prev, { id: nanoid(), title: language.title, Img: language.Img }]); setLink(language.title)}}>Enroll</button>}
+                                    {console.log(enrolled[language.id])}
+                                    {enrolled[language.id] && enrolled[language.id].id===language.id?<button disabled>Enrolled</button>:<button onClick={() => {setEnrolled(prev => [...prev, { id: language.id, title: language.title, Img: language.Img }]); setLink(language.title)}}>Enroll</button>}
                                 </div>
                             </div>
                         </div>)

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './navbar.scss'
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 function Navbar() {
-
+let navigate=useNavigate()
   const [drop, setDrop] = useState(false)
 
   const toggledrop = () => {
@@ -110,7 +110,7 @@ function Navbar() {
                 <hr />
               </ul >
               <ul>
-                <li>
+                <li onClick={()=>{navigate('/login');localStorage.removeItem('admin')}}>
                   Sign out
                 </li>
               </ul>
